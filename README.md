@@ -19,20 +19,20 @@ A high-performance, containerized REST API built in Golang, demonstrating produc
 ## Quick Start
 
 1. Clone the repository:
-   ```
-   git clone [https://github.com/Variosity/go-secure-api.git](https://github.com/Variosity/go-secure-api.git)
-   cd go-secure-api
-   ```
+```
+git clone [https://github.com/Variosity/go-secure-api.git](https://github.com/Variosity/go-secure-api.git)
+cd go-secure-api
+```
 2. Spin up the infrastructure:
 ```
-  docker compose up --build
+docker compose up --build
 ```
 4. Verify the system is operational:
 ```
-  curl http://localhost:8080/health
+curl http://localhost:8080/health
 ```
 4. Create a new user:
 ```
-  curl -X POST http://localhost:8080/users \
-     -H "Content-Type: application/json" \
-     -d '{"email": "test@example.com", "hash": "securehash"}'
+curl -X POST http://localhost:8080/users \
+   -H "Content-Type: application/json" \
+   -d '{"email": "test@example.com", "hash": "securehash"}'
